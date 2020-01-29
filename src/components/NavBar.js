@@ -41,7 +41,8 @@ const NavBar = () => {
         expand="md"
       >
         <Container>
-          <NavbarBrand className="logo" />
+          {/* <NavbarBrand className="logo"  /> */}
+          <NavbarBrand href="#home">To Do App with Hasura</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
@@ -56,6 +57,7 @@ const NavBar = () => {
                 </NavLink>
               </NavItem>
             </Nav>
+
             <Nav className="d-none d-md-block" navbar>
               {!isAuthenticated && (
                 <NavItem>
